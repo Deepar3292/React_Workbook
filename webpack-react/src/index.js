@@ -1,4 +1,11 @@
-const { Book } = require("./Book");
+// const { Book } = require("./Book");
+import Book from './Book';
+import {map, filter} from './lib';
+import React from 'react';
+// import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
+import './styles.css';
+
 console.log("Welcome to React!!!");
 let b1 = new Book("React in action", 8900.00)
 console.log(b1.getData());
@@ -15,3 +22,9 @@ let mobiles = filter(products, (p) => p.category === 'mobile');
 mobiles.forEach(m => console.log(m));
 let names = map(products, p=>p.name);
 names.forEach(n => console.log(n))
+
+let welcome = React.createElement("h1", {style: {color: 'red'}}, "Welcome to react world!!");
+console.log(welcome);
+
+let root = createRoot(document.getElementById('root'));
+root.render(welcome);
