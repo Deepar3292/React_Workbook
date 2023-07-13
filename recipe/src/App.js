@@ -2,6 +2,7 @@
 import './App.css';
 import Menu from './components/MenuComponent';
 import ParentComponent from './examples/Parent';
+import Sample from './examples/Sample';
 import Users from './examples/Users';
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
     </div>
     <div className="Users">
       <ParentComponent />
+    </div>
+    <div className="Users">
+      <Sample />
     </div>
     </>
   );
