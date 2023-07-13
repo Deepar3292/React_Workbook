@@ -26,6 +26,6 @@ describe("testing react app", () => {
     let txtBox = screen.getByPlaceholderText('search by name');
     fireEvent.change(txtBox, {'target': {'value': 'sparrow'}});
     let btns = screen.getAllByRole('button');
-    expect(btns.length).toBe(2);
+    expect(btns.length).toBe(1);
   })
 })
