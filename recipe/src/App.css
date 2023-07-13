@@ -6,6 +6,13 @@
   margin-bottom: 100px;
 }
 
+.Users {
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 100px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
